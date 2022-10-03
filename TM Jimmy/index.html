@@ -33,9 +33,17 @@
             z-index: 1;
  
         }
-        .swipper-slide {
-            color: white;
+        .swiper {
+            width: 600px;
+            height: 300px;
+
         }
+        #flex{
+            margin: 100px;
+            display: block;
+        }
+
+       
     </style>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -48,24 +56,25 @@
  <body>
     <canvas class="background"></canvas>
     <div class="container">
-       <div class=" animate__animated animate__backInDown">Once upon a time......</div>
+       <div class=" animate__animated animate__backInDown animate__repeat-2">Once upon a time......</div>
        <div class="d1 animate__animated animate__fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatibus rerum est dolores, veritatis cupiditate expedita tempora natus dolorem fugiat similique officia libero alias, ea iure veniam itaque reiciendis? Qui sapiente quia illum? Error nihil, maiores modi assumenda quidem ea quod consequatur quae repellendus debitis iure tempora, corrupti iste eos dolorum nobis nisi similique molestias explicabo alias! Id ratione et ullam? Adipisci veritatis non nulla ullam quas modi blanditiis dolorem, labore autem illum maiores est, corporis aspernatur officiis sit! Itaque necessitatibus mollitia accusamus architecto voluptatum libero accusantium dolores aut distinctio magnam, fuga ex corrupti perferendis suscipit eligendi maiores id! Dolor. </div>
        <div class="d2 animate__animated animate__jackInTheBox animate__infinite">And so it is the end</div>
        <div class="d3 animate__animated animate__zoomIn">Credits</div>
-       <div class="d4 animate__animated animate__slideOutDown animate__infinite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore aut deleniti soluta, necessitatibus ipsam itaque sint facere animi temporibus, voluptas provident quam odit beatae dolores neque ex commodi, eum sit tempore nihil repellat. Blanditiis voluptatem corporis placeat eveniet ea. Quaerat iure quidem iusto repellendus voluptatem facilis nesciunt maxime natus.</div>
+       <div class="d4 animate__animated animate__slideOutDown ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore aut deleniti soluta, necessitatibus ipsam itaque sint facere animi temporibus, voluptas provident quam odit beatae dolores neque ex commodi, eum sit tempore nihil repellat. Blanditiis voluptatem corporis placeat eveniet ea. Quaerat iure quidem iusto repellendus voluptatem facilis nesciunt maxime natus.</div>
     </div>
-    <div class="swiper-container">
+    <div id="flex"><div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098__480.jpg" alt=""></a></div>
-          <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029__480.jpg" alt=""></div>
+          <div class="swiper-slide animate__animated animate__slideDown"><img src="https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098__480.jpg" alt=""></a></div>
+          <div class="swiper-slide animate__animated animate__zoomIn"><img src="https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029__480.jpg" alt=""></div>
           <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312__480.jpg" alt=""></div>
         </div>
        
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        </div>
     
     <script>
         window.onload = function () {
